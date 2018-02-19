@@ -1,0 +1,14 @@
+# Build folder
+build
+
+# Node.JS
+node_modules
+
+# Data
+data
+
+# Logo
+logo
+
+# Mail config
+mail_config.js

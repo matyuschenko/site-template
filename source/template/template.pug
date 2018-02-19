@@ -1,0 +1,31 @@
+include common/mixins
+
+block variables
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title #{title}
+        meta(name="description" content=desciption)
+        meta(property="og:type" content="website")
+        meta(property="og:title" content=title)
+        meta(property="og:description" content=desciption)
+        meta(property="og:url" content=og_url)
+        meta(property="og:image" content=og_image)
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        link(rel="icon" type="image/png" href="./i/favicon.png")
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css")
+        link(rel="stylesheet" href="/css/app.css")
+        script(src="/js/app.js" defer)
+
+        <!--[if lt IE 9]>
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+        <![endif]-->
+
+    body
+        block content
+
+//- Metrika counter may go here
