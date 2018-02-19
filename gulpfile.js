@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     sourceFolder = './source';
 
 gulp.task('pug', function () {
-    return gulp.src(sourceFolder + '/template/pages/*.pug')
+    return gulp.src(sourceFolder + '/template/pages/**/*.pug')
         .pipe(pug())
         .pipe(gulp.dest(buildFolder))
 });
